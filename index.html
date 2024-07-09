@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Gol and Chhota?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .btn {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .no-btn {
+            background-color: #d9534f;
+            color: white;
+            position: absolute;
+        }
+        .yes-btn {
+            background-color: #5cb85c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Are you gol and chhota?</h1>
+        <button class="btn yes-btn">Yes</button>
+        <button class="btn no-btn">No</button>
+    </div>
+    <script>
+        const noBtn = document.querySelector('.no-btn');
+        noBtn.addEventListener('mouseover', () => {
+            const x = Math.random() * window.innerWidth - noBtn.offsetWidth;
+            const y = Math.random() * window.innerHeight - noBtn.offsetHeight;
+            noBtn.style.left = `${x}px`;
+            noBtn.style.top = `${y}px`;
+        });
+        noBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
