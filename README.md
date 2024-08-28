@@ -1,3 +1,3 @@
 # check if you are gola and smol here
 
-[here](Pranav322.github.io/golsmolchecker)
+[here](https://Pranav322.github.io/golsmolchecker)
